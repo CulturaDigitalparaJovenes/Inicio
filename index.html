@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Proyecto Cultura Digital para Jóvenes: talleres, guías y recursos gratuitos para el uso seguro y productivo de herramientas digitales." />
+  <meta name="theme-color" content="#2563eb" />
+  <title>Cultura Digital para Jóvenes | Uso Seguro de Herramientas Digitales</title>
+
+  <!-- Bootstrap Icons (íconos ligeros) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Datos estructurados básicos (SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Proyecto Cultura Digital para Jóvenes",
+    "url": "https://tu-dominio.ejemplo",
+    "description": "Promoviendo el uso seguro y productivo de herramientas digitales.",
+    "sameAs": [
+      "https://facebook.com/tupagina",
+      "https://instagram.com/tupagina",
+      "https://youtube.com/@tucanal"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Enlace para saltar al contenido (accesibilidad) -->
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- Header con navegación (CSS-only toggle) -->
+  <header class="header" role="banner">
+    <div class="container">
+      <nav class="navbar" aria-label="Navegación principal">
+        <a href="index.html" class="logo" aria-label="Inicio">
+          <img src="img/logo.png" alt="Logo Proyecto Cultura Digital" width="120" height="36" decoding="async" />
+        </a>
+
+        <!-- Toggle accesible con checkbox -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
+        <label for="nav-toggle" class="menu-toggle" aria-label="Abrir o cerrar menú" role="button" tabindex="0">
+          <i class="bi bi-list" aria-hidden="true"></i>
+        </label>
+
+        <ul class="nav-links" id="menu" role="menubar" aria-label="Enlaces del sitio">
+          <li role="none"><a role="menuitem" href="#objetivo">Objetivo</a></li>
+          <li role="none"><a role="menuitem" href="#acciones">Acciones</a></li>
+          <li role="none"><a role="menuitem" href="recursos.html">Recursos</a></li>
+          <li role="none"><a role="menuitem" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero (ligero + picture con fallback) -->
+  <section class="hero" aria-labelledby="titulo-hero">
+    <div class="hero-media" aria-hidden="true">
+      <picture>
+        <img src="img/hero-bg.jpg" alt="" loading="eager" decoding="async" />
+      </picture>
+    </div>
+    <div class="container hero-content">
+      <h1 id="titulo-hero">Proyecto Cultura Digital para Jóvenes</h1>
+      <p class="subtitle">Promoviendo el uso seguro y productivo de herramientas digitales</p>
+      <a class="cta-button" href="#acciones">Ver talleres <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+    </div>
+  </section>
+
+  <!-- Contenido principal -->
+  <main id="contenido" class="container" role="main">
+    <!-- Objetivo -->
+    <section id="objetivo" class="section" aria-labelledby="titulo-objetivo">
+      <h2 id="titulo-objetivo" class="section-title">Objetivo del Proyecto</h2>
+      <div class="grid-2">
+        <div class="content">
+          <p>
+            Ofrecemos un sitio web educativo gratuito y acciones formativas para jóvenes de nivel medio superior, con el fin de:
+          </p>
+          <ul class="custom-list">
+            <li><i class="bi bi-check-circle" aria-hidden="true"></i> Fomentar la seguridad digital.</li>
+            <li><i class="bi bi-check-circle" aria-hidden="true"></i> Potenciar la productividad con herramientas tecnológicas.</li>
+            <li><i class="bi bi-check-circle" aria-hidden="true"></i> Brindar acceso a recursos educativos de calidad.</li>
+          </ul>
+        </div>
+        <div class="media">
+          <picture>
+            <img
+              src="img/objetivo.jpg"
+              alt="Jóvenes aprendiendo tecnología"
+              class="img-rounded"
+              loading="lazy"
+              decoding="async"
+              width="400"
+              height="200"
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- Acciones -->
+    <section id="acciones" class="section bg-light" aria-labelledby="titulo-acciones">
+      <h2 id="titulo-acciones" class="section-title">Nuestras Acciones Formativas</h2>
+      <div class="grid-3">
+        <article class="card" aria-labelledby="card-sec">
+          <i class="bi bi-shield-lock icon-large" aria-hidden="true"></i>
+          <h3 id="card-sec">Talleres de Seguridad</h3>
+          <p>Aprende a proteger tu identidad digital y navegar seguro en internet.</p>
+        </article>
+
+        <article class="card" aria-labelledby="card-prod">
+          <i class="bi bi-lightbulb icon-large" aria-hidden="true"></i>
+          <h3 id="card-prod">Guías de Productividad</h3>
+          <p>Domina hojas de cálculo, presentaciones y herramientas colaborativas.</p>
+        </article>
+
+        <article class="card" aria-labelledby="card-res">
+          <i class="bi bi-book icon-large" aria-hidden="true"></i>
+          <h3 id="card-res">Recursos Gratuitos</h3>
+          <p>Descarga materiales educativos sobre ciudadanía y cultura digital.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Zona Offline / Descargas rápidas -->
+    <section id="offline" class="section" aria-labelledby="titulo-offline">
+      <h2 id="titulo-offline" class="section-title">Aprende sin Internet</h2>
+      <p>Descarga guías e infografías para estudiar sin conexión:</p>
+      <ul class="download-list">
+        <li><a class="btn-download" href="descargas/seguridad_digital.pdf" download>Seguridad digital (PDF)</a></li>
+        <li><a class="btn-download" href="descargas/productividad_basica.pdf" download>Productividad básica (PDF)</a></li>
+        <li><a class="btn-download" href="descargas/ciudadania_digital.pdf" download>Ciudadanía digital (PDF)</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="img/logo-white.png" alt="Logo Proyecto Cultura Digital" width="110" height="34" decoding="async" />
+          <p class="foot-note">Cultura Digital para Jóvenes — Conalep Tixtla</p>
+        </div>
+        <nav aria-label="Enlaces de pie de página">
+          <h4 class="footer-title">Enlaces</h4>
+          <ul class="footer-links">
+            <li><a href="#objetivo">Objetivo</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="privacidad.html">Privacidad</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h4 class="footer-title">Síguenos</h4>
+          <div class="social">
+            <a aria-label="Facebook" href="#"><i class="bi bi-facebook"></i></a>
+            <a aria-label="Instagram" href="#"><i class="bi bi-instagram"></i></a>
+            <a aria-label="YouTube" href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="foot-hr" />
+      <p class="copyright">© 2025 Proyecto Cultura Digital. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
