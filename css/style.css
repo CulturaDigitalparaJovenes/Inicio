@@ -169,7 +169,7 @@ input:focus-visible {
     background: #111822;
   }
   .nav-links a {
-    color: #e5e7eb;
+    color: #fff; /* Letras blancas en menú móvil modo oscuro */
   }
 }
 
