@@ -156,17 +156,17 @@ input:focus-visible {
 /* Mejor contraste en menú móvil */
 @media (max-width: 768px) {
   .nav-links {
-    background: var(--bg);
+    background: #fff;      /* Fondo blanco */
   }
   .nav-links a {
-    color: var(--text);
+    color: #222;           /* Letras oscuras */
   }
 }
 
 /* Mejor contraste en menú móvil modo oscuro */
 @media (max-width: 768px) and (prefers-color-scheme: dark) {
   .nav-links {
-    background: black;
+    background: #111822;
   }
   .nav-links a {
     color: #e5e7eb;
