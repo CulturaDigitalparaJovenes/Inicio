@@ -166,10 +166,10 @@ input:focus-visible {
 /* Mejor contraste en menú móvil modo oscuro */
 @media (max-width: 768px) and (prefers-color-scheme: dark) {
   .nav-links {
-    background: #111822;
+    background: black;
   }
   .nav-links a {
-    color: black;
+    color: #e5e7eb;
   }
 }
 
