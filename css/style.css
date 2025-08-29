@@ -443,3 +443,12 @@ tbody tr:last-child {
 tbody tr:hover {
   background: var(--bg-soft, #f8fafc);
 }
+figure img {
+  background: linear-gradient(135deg, #f3f4f6 60%, #e0e7ff 100%);
+  padding: 8px;
+}
+@media (prefers-color-scheme: dark) {
+  figure img {
+    background: linear-gradient(135deg, #1e293b 60%, #2563eb 100%);
+  }
+}
