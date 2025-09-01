@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2.3 Seguridad Digital y Ciberseguridad | Cultura Digital para Jóvenes</title>
+  <meta name="description" content="Subtema 2.3 del Módulo 2: Seguridad Digital y Ciberseguridad.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="container">
+      <nav class="navbar" aria-label="Navegación principal">
+        <a href="index.html" class="logo" aria-label="Inicio">
+          <img src="img/logo.png" alt="Logo Proyecto Cultura Digital" width="120" height="36" decoding="async" />
+        </a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
+        <label for="nav-toggle" class="menu-toggle" aria-label="Abrir o cerrar menú" role="button" tabindex="0">
+          <i class="bi bi-list" aria-hidden="true"></i>
+        </label>
+        <ul class="nav-links" id="menu" role="menubar" aria-label="Enlaces del sitio">
+          <li role="none"><a role="menuitem" href="index.html#objetivo">Objetivo</a></li>
+          <li role="none"><a role="menuitem" href="index.html#acciones">Módulos</a></li>
+          <li role="none"><a role="menuitem" href="recursos.html">Recursos</a></li>
+          <li role="none"><a role="menuitem" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido principal del subtema -->
+  <main id="contenido" class="container" role="main">
+    <section class="section" aria-labelledby="titulo-subtema">
+      <h1 id="titulo-subtema" class="section-title">
+        📘 Tema 2.3: Seguridad Digital y Ciberseguridad
+      </h1>
+      <p class="subtitle">👋 Bienvenida e Introducción</p>
+      
+      <p>
+        ✨ <strong>Presentación del tema</strong><br>
+        Hoy en día vivimos conectados: usamos internet para estudiar, comprar, trabajar y comunicarnos. Pero este mundo digital trae riesgos: robo de datos, virus, fraudes y ataques cibernéticos.
+      </p>
+      <p>
+        Por eso necesitamos seguridad digital (para proteger nuestra información y dispositivos) y ciberseguridad (para enfrentar amenazas más complejas en redes y sistemas).
+      </p>
+
+      <!-- SUGERENCIA DE IMAGEN: Persona protegiendo su dispositivo con un escudo digital (img/seguridad-digital.jpg) -->
+      <figure style="margin:2rem 0;">
+        <img src="img/seguridad-digital.png" alt="Persona protegiendo su dispositivo con un escudo digital" class="img-rounded" width="600" loading="lazy">
+        <figcaption>La seguridad digital protege nuestra información y dispositivos.</figcaption>
+      </figure>
+
+      <div class="card" style="margin-bottom:2rem;">
+        <strong>📌 Preguntas clave:</strong>
+        <p>¿Cómo proteges tu información personal cuando usas tu celular o computadora?</p>
+        <p>¿Qué pasaría si alguien roba tus contraseñas o accede a tus redes sociales?</p>
+      </div>
+
+      <h2>🎯 Habilidades que obtendrás</h2>
+      <p>Al terminar este tema, podrás:</p>
+      <ul class="custom-list">
+        <li>✅ Diferenciar entre seguridad digital y ciberseguridad.</li>
+        <li>✅ Identificar las principales amenazas digitales (malware, phishing, ransomware, etc.).</li>
+        <li>✅ Reconocer buenas prácticas de protección para usuarios y organizaciones.</li>
+        <li>✅ Analizar los riesgos de no cuidar la seguridad digital.</li>
+        <li>✅ Aplicar estrategias prácticas para proteger tu vida digital.</li>
+        <li>✅ Valorar la importancia de la ciberseguridad en la sociedad actual.</li>
+      </ul>
+
+      <hr style="margin:2rem 0;">
+
+      <h2>🌐 1. Seguridad digital vs. ciberseguridad</h2>
+      <p>
+        <strong>📖 Definiciones clave:</strong>
+      </p>
+      <p>
+        <strong>Seguridad digital:</strong> hábitos y herramientas para proteger la información y dispositivos de una persona.
+      </p>
+      <p>
+        <strong>Ciberseguridad:</strong> prácticas avanzadas para proteger redes, sistemas y datos frente a ataques o delitos cibernéticos.
+      </p>
+
+      <h3>🔹 Comparación clara:</h3>
+      <table style="margin:1rem 0; width:100%; max-width:700px;">
+        <thead>
+          <tr>
+            <th>Concepto</th>
+            <th>Seguridad digital 🛡️</th>
+            <th>Ciberseguridad 🔐</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Nivel</strong></td>
+            <td>Personal y cotidiano</td>
+            <td>Empresarial y especializado</td>
+          </tr>
+          <tr>
+            <td><strong>Enfoque</strong></td>
+            <td>Protección de datos y dispositivos</td>
+            <td>Defensa de redes, sistemas y servidores</td>
+          </tr>
+          <tr>
+            <td><strong>Ejemplos</strong></td>
+            <td>Contraseñas seguras, 2FA, antivirus</td>
+            <td>Firewalls, encriptación, planes contra ciberataques</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="card" style="margin-bottom:2rem;">
+        <strong>💡 Ejemplo práctico:</strong>
+        <p>Cambiar tu contraseña regularmente = seguridad digital.</p>
+        <p>Proteger una base de datos de una universidad contra hackers = ciberseguridad.</p>
+      </div>
+
+      <hr style="margin:2rem 0;">
+
+      <h2>🕵️ 2. Principales amenazas digitales</h2>
+      <p>
+        <strong>🔎 Algunas de las más comunes son:</strong>
+      </p>
+      <ul>
+        <li>🦠 <strong>Malware:</strong> software malicioso (virus, troyanos, spyware).</li>
+        <li>📧 <strong>Phishing:</strong> correos o mensajes falsos que buscan engañarte para robar información.</li>
+        <li>🔒 <strong>Ransomware:</strong> secuestro de información a cambio de dinero.</li>
+        <li>👤 <strong>Robo de identidad:</strong> alguien se hace pasar por ti en línea.</li>
+        <li>🌐 <strong>Ataques DDoS:</strong> sobrecarga de un sistema para dejarlo fuera de servicio.</li>
+        <li>🎭 <strong>Ingeniería social:</strong> manipulación psicológica para obtener tus datos.</li>
+      </ul>
+
+      <!-- SUGERENCIA DE IMAGEN: Collage de diferentes amenazas digitales (img/amenazas-digitales.png) -->
+      <figure style="margin:2rem 0;">
+        <img src="img/amenazas-digitales.png" alt="Collage de diferentes amenazas digitales" width="600" loading="lazy">
+        <figcaption>Existen múltiples amenazas en el mundo digital que debemos conocer.</figcaption>
+      </figure>
+
+      <div class="card" style="margin-bottom:2rem;">
+        <strong>💡 Ejemplo real:</strong>
+        <p>Cuando recibes un correo de "tu banco" pidiéndote que confirmes tu contraseña → es un intento de phishing.</p>
+      </div>
+
+      <hr style="margin:2rem 0;">
+
+      <h2>🌟 3. Consecuencias de una mala seguridad digital</h2>
+      <ul>
+        <li>🚫 Pérdida de archivos importantes.</li>
+        <li>🕵️ Suplantación de identidad en redes sociales.</li>
+        <li>💸 Fraudes económicos y compras no autorizadas.</li>
+        <li>📉 Daño a la reputación personal o institucional.</li>
+        <li>⚠️ Filtración de datos privados (fotos, direcciones, cuentas).</li>
+        <li>⚖️ Consecuencias legales (ciberacoso, difusión sin consentimiento).</li>
+      </ul>
+
+      <!-- SUGERENCIA DE IMAGEN: Imagen que muestre las consecuencias de una brecha de seguridad (img/consecuencias-seguridad.png) -->
+      <figure style="margin:2rem 0;">
+        <img src="img/consecuencias-seguridad.png" alt="Imagen que muestre las consecuencias de una brecha de seguridad" width="600" loading="lazy">
+        <figcaption>Las consecuencias de una mala seguridad digital pueden ser graves.</figcaption>
+      </figure>
+
+      <hr style="margin:2rem 0;">
+
+      <h2>🛡️ 4. Estrategias de protección personal</h2>
+      <p>
+        <strong>🔑 Acciones prácticas para estudiantes y usuarios comunes:</strong>
+      </p>
+      <ul>
+        <li>Usa contraseñas seguras y únicas en cada cuenta.</li>
+        <li>Activa la verificación en dos pasos (2FA).</li>
+        <li>Instala y actualiza tu antivirus y sistema operativo.</li>
+        <li>Evita conectarte a redes WiFi públicas sin protección.</li>
+        <li>Haz copias de seguridad (backups) de tu información.</li>
+        <li>Verifica las fuentes de correos y enlaces antes de abrirlos.</li>
+      </ul>
+
+      <!-- SUGERENCIA DE IMAGEN: Infografía con consejos de seguridad digital (img/consejos-seguridad.png) -->
+      <figure style="margin:2rem 0;">
+        <img src="img/consejos-seguridad.png" alt="Infografía con consejos de seguridad digital" width="600" loading="lazy">
+        <figcaption>Implementar buenas prácticas de seguridad es esencial para protegerse.</figcaption>
+      </figure>
+
+      <hr style="margin:2rem 0;">
+
+      <h2>🔐 5. Estrategias de ciberseguridad en organizaciones</h2>
+      <p>
+        <strong>🔹 Medidas clave en empresas, escuelas y gobiernos:</strong>
+      </p>
+      <ul>
+        <li>🔥 Uso de firewalls y filtros de seguridad.</li>
+        <li>🔎 Monitoreo constante de redes.</li>
+        <li>🔒 Encriptación de datos sensibles.</li>
+        <li>👨‍🏫 Capacitación contra ingeniería social y fraudes.</li>
+        <li>🚨 Planes de respuesta ante incidentes cibernéticos.</li>
+      </ul>
+
+      <div class="card" style="margin-bottom:2rem;">
+        <strong>💡 Ejemplo:</strong>
+        <p>Si una escuela protege su base de datos de alumnos con encriptación y copias de seguridad, está aplicando ciberseguridad.</p>
+      </div>
+
+      <hr style="margin:2rem 0;">
+
+      <h2>🇲🇽 6. Contexto en México</h2>
+      <p>
+        <strong>📌 En nuestro país existen leyes y organismos que protegen la seguridad digital:</strong>
+      </p>
+      <ul>
+        <li>⚖️ <strong>Ley Olimpia:</strong> sanciona la difusión de imágenes íntimas sin consentimiento.</li>
+        <li>📜 <strong>Ley Federal de Protección de Datos Personales (2010):</strong> regula el manejo de información personal.</li>
+        <li>🛡️ <strong>INAI</strong> (Instituto Nacional de Transparencia): promueve el cuidado de datos personales.</li>
+        <li>🎓 <strong>Programas como MéxicoX</strong> ofrecen cursos sobre ciberseguridad y ciudadanía digital.</li>
+      </ul>
+
+      <hr style="margin:2rem 0;">
+
+      <h2>📚 7. Casos reales</h2>
+      <ul>
+        <li>🎯 <strong>Caso positivo:</strong> Una empresa implementó encriptación de datos y logró evitar el robo de información en un ataque.</li>
+        <li>⚠️ <strong>Caso negativo:</strong> Usuarios que descargaron aplicaciones piratas sufrieron robo de contraseñas bancarias.</li>
+        <li>🕵️ <strong>Ejemplo común:</strong> Al aceptar los términos de un juego gratuito que pide acceso a contactos y ubicación, compartes más información de la que imaginas.</li>
+      </ul>
+
+      <hr style="margin:2rem 0;">
+
+      <h2>📌 8. Resumen Final</h2>
+      <ul>
+        <li>👉 Seguridad digital = hábitos y herramientas para proteger tu información personal.</li>
+        <li>👉 Ciberseguridad = estrategias avanzadas contra ciberataques.</li>
+        <li>👉 Existen múltiples amenazas digitales: malware, phishing, ransomware, robo de identidad.</li>
+        <li>👉 No cuidar la seguridad trae riesgos graves: fraudes, pérdida de datos, daño a la reputación.</li>
+        <li>👉 Todos debemos aplicar buenas prácticas digitales para protegernos.</li>
+      </ul>
+
+      <h2>📚 Cierre</h2>
+      <p>
+        Recuerda:<br>
+        En internet, prevenir es la mejor defensa.<br>
+        Cuidar tu seguridad digital hoy es proteger tu identidad, privacidad y futuro.
+      </p>
+      <p>
+        Piensa siempre:<br>
+        <strong>"¿Estoy protegiendo mi información o la estoy dejando en manos de extraños?"</strong>
+      </p>
+    </section>
+
+    <!-- Navegación entre subtemas -->
+    <nav class="subtema-nav" aria-label="Navegación de subtemas" style="margin-top:2rem;">
+      <a class="btn-download" href="modulo2-2.html">← Subtema anterior</a>
+      <a class="btn-download" href="modulo2.html">Volver al Módulo 2</a>
+      <a class="btn-download" href="modulo2-4.html">Siguiente subtema →</a>
+    </nav>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="img/logo-white.png" alt="Logo Proyecto Cultura Digital" width="110" height="34" decoding="async" />
+          <p class="foot-note">Cultura Digital para Jóvenes</p>
+        </div>
+        <nav aria-label="Enlaces de pie de página">
+          <h4 class="footer-title">Enlaces</h4>
+          <ul class="footer-links">
+            <li><a href="#objetivo">Objetivo</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="privacidad.html">Privacidad</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h4 class="footer-title">Síguenos</h4>
+          <div class="social">
+            <a aria-label="Facebook" href="https://www.facebook.com/profile.php?id=61579358352375"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="foot-hr" />
+      <p class="copyright">© 2025 Proyecto Cultura Digital. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
