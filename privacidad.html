@@ -28,35 +28,152 @@
         </ul>
       </nav>
     </div>
+ <style>
+    /* Estilos específicos para la página de privacidad */
+    .privacy-section {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 2.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .privacy-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    
+    .privacy-icon {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    
+    .privacy-list {
+      display: grid;
+      gap: 1.2rem;
+      margin: 1.5rem 0;
+    }
+    
+    .privacy-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      padding: 1rem;
+      background: var(--bg-soft);
+      border-radius: var(--radius);
+    }
+    
+    .privacy-item i {
+      color: var(--primary);
+      font-size: 1.2rem;
+      margin-top: 0.2rem;
+      flex-shrink: 0;
+    }
+    
+    .privacy-highlight {
+      background: rgba(37, 99, 235, 0.08);
+      border-left: 4px solid var(--primary);
+      padding: 1.5rem;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      margin: 1.8rem 0;
+    }
+    
+    .contact-info {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-top: 0.5rem;
+    }
+    
+    @media (max-width: 768px) {
+      .privacy-section {
+        padding: 1.5rem;
+      }
+      
+      .privacy-item {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+
   </header>
 
   <!-- Contenido principal -->
-  <main id="contenido" class="container" role="main">
-    <section class="section" aria-labelledby="titulo-privacidad">
-      <h1 id="titulo-privacidad" class="section-title">Aviso de Privacidad</h1>
+ <main id="contenido" class="container" role="main">
+    <section class="section privacy-section" aria-labelledby="titulo-privacidad">
+      <div class="privacy-header">
+        <i class="bi bi-shield-lock privacy-icon" aria-hidden="true"></i>
+        <h1 id="titulo-privacidad" class="section-title">Aviso de Privacidad</h1>
+        <p class="subtitle">Cultura Digital para Jóvenes</p>
+      </div>
+      
+      <h2>Nuestro compromiso con tu privacidad</h2>
       <p>
-        En <strong>Cultura Digital para Jóvenes</strong> respetamos tu privacidad y protegemos tus datos personales.
+        En <strong>Cultura Digital para Jóvenes</strong> respetamos tu privacidad. 
+        Este aviso explica cómo recopilamos, utilizamos y compartimos tu información cuando utilizas nuestro sitio web.
       </p>
-      <ul>
-        <li>
-          Este sitio utiliza <strong>Google Analytics</strong> para analizar el uso y mejorar la experiencia del usuario. Google Analytics utiliza <strong>cookies de seguimiento</strong> para recopilar información anónima sobre tu navegación.
+      
+      <h2>Información que recopilamos</h2>
+      <ul class="privacy-list">
+        <li class="privacy-item">
+          <i class="bi bi-graph-up" aria-hidden="true"></i>
+          <div>
+            <strong>Datos de analítica</strong>: Utilizamos Google Analytics para analizar el uso del sitio y mejorar la experiencia del usuario. 
+            Google Analytics utiliza cookies para recopilar información anónima sobre tu navegación (páginas visitadas, tiempo en el sitio, etc.).
+          </div>
         </li>
-        <li>
-          No recopilamos datos personales identificables sin tu consentimiento.
+        <li class="privacy-item">
+          <i class="bi bi-x-circle" aria-hidden="true"></i>
+          <div>
+            <strong>Sin datos identificables</strong>: No recopilamos datos personales identificables (nombre, email, etc.) sin tu consentimiento explícito.
+          </div>
         </li>
-        <li>
-          Puedes desactivar las cookies desde la configuración de tu navegador si lo prefieres.
-        </li>
-        <li>
-          No compartimos tu información con terceros, excepto lo necesario para el funcionamiento de Google Analytics.
-        </li>
-        <li>
-          Para dudas o solicitudes sobre tu privacidad, escríbenos a <a href="mailto:contacto@tusitio.com">contacto@tusitio.com</a>.
+        <li class="privacy-item">
+          <i class="bi bi-cookie" aria-hidden="true"></i>
+          <div>
+            <strong>Cookies técnicas</strong>: Utilizamos cookies necesarias para el funcionamiento básico del sitio web.
+          </div>
         </li>
       </ul>
+      
+      <div class="privacy-highlight">
+        <h3>¿Qué son las cookies?</h3>
+        <p>
+          Las cookies son pequeños archivos de texto que se almacenan en tu dispositivo cuando visitas nuestro sitio web. 
+          Nos ayudan a proporcionarte una experiencia mejorada y más personalizada.
+        </p>
+      </div>
+      
+      
+      
+      <h2>Divulgación a terceros</h2>
       <p>
-        Al navegar en este sitio, aceptas el uso de cookies según este aviso de privacidad.
+        No compartimos tu información personal con terceros, excepto en los siguientes casos:
       </p>
+      <ul>
+        <li>Proveedores de servicios que nos ayudan a operar nuestro sitio (como Google Analytics)</li>
+      </ul>
+      
+      <h2>Contacto</h2>
+      <p>
+        Si tienes preguntas sobre este aviso de privacidad o deseas ejercer tus derechos sobre tus datos personales, no dudes en contactarnos:
+      </p>
+      <a href="mailto:culturadigitalparajovenes@gmail.com" class="contact-info">
+        <i class="bi bi-envelope" aria-hidden="true"></i>
+        culturadigitalparajovenes@gmail.com
+      </a>
+      
+      <div class="privacy-highlight">
+        <h3>Aceptación de términos</h3>
+        <p>
+          Al navegar en este sitio, aceptas el uso de cookies según lo descrito en este aviso de privacidad. 
+          Esta política fue actualizada por última vez en septiembre de 2025.
+        </p>
+      </div>
     </section>
   </main>
 
@@ -84,7 +201,7 @@
         </div>
       </div>
       <hr class="foot-hr" />
-      <p class="copyright">© 2025 Proyecto Cultura Digital. Todos los derechos reservados.</p>
+      <p class="copyright"> 2025 Proyecto Cultura Digital para Jóvenes</p>
     </div>
   </footer>
 </body>
